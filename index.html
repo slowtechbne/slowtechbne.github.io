@@ -5,11 +5,7 @@ layout: default
 <div class="home">
 
   <h2 class="page-heading">Events</h2>
-  {% for event in site.data.events %}
-   {{ event.title }} | {{ event.subtitle }}<br/>
-   {{ event.time }}, {{ event.date | date: "%d %B %Y" }} | {{ event.location}}<br/>
-   {{ event.description }}
-  {% endfor %}
+  {% include events.html %}
 
   <h1 class="page-heading">Posts</h1>
 
