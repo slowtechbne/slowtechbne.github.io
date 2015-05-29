@@ -2,7 +2,7 @@
 layout: default
 ---
 
-__Welcome to Slow Tech Brisbane!__
+#### Welcome to Slow Tech Brisbane!
 
 
 
