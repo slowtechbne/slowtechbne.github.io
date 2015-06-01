@@ -1,9 +1,13 @@
 <div class="header">
   <nav>
     <ul class="nav nav-pills pull-right">
-    {% for page in site.pages %}
-    {% if page.title %}
-    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+    {% for link in site.pages %}
+    {% if link.title %}
+    {% if page.url contains link.url %}
+    <li class="active"><a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a></li>
+    {% else %}
+    <li><a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a></li>
+    {% endif %}
     {% endif %}
     {% endfor %}
     </ul>
