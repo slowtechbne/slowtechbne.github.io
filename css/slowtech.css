@@ -40,3 +40,29 @@ body {
 .index-news {
   margin-left: 2em;
 }
+
+/* for projects */
+
+.links {
+	margin-top:14px;
+	text-align:center;
+	width:100%
+}
+
+#links_1>div{
+	width:100%
+}
+
+#links_2>div{
+	width:50%
+}
+
+#links_3>div{
+	width:33.33%
+}
+
+.links div{
+	display:inline-block;
+	min-width:150px;
+	text-align:center
+}

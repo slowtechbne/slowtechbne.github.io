@@ -1,0 +1,22 @@
+{% for project in site.data.projects %}
+<h4>{{ project.title }} <small>{{ project.subtitle }}</small></h4>
+{{ project.description | markdownify }}
+  {% if project.url or project.github %}
+  <div class="links"
+       {% if project.url and project.github %}
+       id="links_3"
+       {% else if project.github %}
+       id="links_2"
+       {% else %}
+       id="links_1"
+       {% endif %}>
+    {% if project.url %}
+    <div class="website">
+      <i class="fa fa-link"></i> <a href="{{ project.url }}">view online</a>
+    </div
+    >{% endif %}{% if project.github %}<div class="github">
+      <i class="fa fa-github"></i> <a href="https://github.com/{{ project.github.url }}">view on GitHub</a>
+    </div>{% endif %}
+  </div>
+  {% endif %}
+{% endfor %}
