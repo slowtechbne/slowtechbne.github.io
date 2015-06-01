@@ -8,12 +8,20 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
 
 #### Recent news
 
+{% for post in site.posts %}
+  {% if post.type == 'news' %}
+    {{ post }}
+  {% endif %}
+{% endfor %}
+
+{% if site.data.events.size < 0 %}
+
 #### [Upcoming events](/events/)
 
 <div id="events">
 {% for event in site.data.events %}
-  {% capture nowunix %}{{ site.date | date: '%s' }}{% endcapture %}
-  {% capture eventunix%}{{ event.date | date: '%s' }}{% endcapture %}
+  {% capture nowunix %}{{ site.time | date: '%s' }}{% endcapture %}
+  {% capture eventunix %}{{ event.date | date: '%s' }}{% endcapture %}
   {% if eventunix > nowunix %}
   <div class="event">
     <strong>{{ event.title }}</strong> | {{ event.subtitle }}
@@ -26,5 +34,10 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
   {% endif %}
 {% endfor %}
 </div>
+</div>
 
-#### [Past events](/events/)
+##### [Past events](events#past)
+
+{% else %}
+
+{% endif %}
