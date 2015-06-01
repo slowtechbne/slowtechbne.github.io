@@ -8,15 +8,13 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
 
 #### Recent news
 
-{% for post in site.posts %}
-  {% if post.news %}
-  {{ post.date | date: '%D' }} --- <strong>{{ post.title }}</strong>
+{% for item in site.news %}
+  {{ item.date | date: '%D' }} --- <strong>{{ item.title }}</strong>
 
   <div class="index-news">
-    {{ post.content }}
+    {{ item.content }}
   </div>
 
-  {% endif %}
 {% endfor %}
 
 {% if site.data.events.size < 0 %}
