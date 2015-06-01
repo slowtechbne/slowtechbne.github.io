@@ -2,7 +2,7 @@
 layout: default
 ---
 
-### Welcome to Slow Tech Brisbane!
+__Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in Brisbane, Australia, who share a belief that general participation in the proliferation of computers is the key to avoiding a digital future rife with misuse and misappropriation of our electronic resources by governments, businesses, and other malicious individuals.
 
 
 
@@ -26,3 +26,5 @@ layout: default
   {% endif %}
 {% endfor %}
 </div>
+
+#### [Past events](/events/)
