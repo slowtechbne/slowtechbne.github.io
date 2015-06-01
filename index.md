@@ -4,13 +4,18 @@ layout: default
 
 __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in Brisbane, Australia, who share a belief that general participation in the proliferation of computers is the key to avoiding a digital future rife with misuse and misappropriation of our electronic resources by governments, businesses, and other malicious individuals.
 
-
+[Learn more...](/about/)
 
 #### Recent news
 
 {% for post in site.posts %}
-  {% if post.type == 'news' %}
-    {{ post }}
+  {% if post.news %}
+  {{ post.date | date: '%D' }} --- <strong>{{ post.title }}</strong>
+
+  <div class="index-news">
+    {{ post.content }}
+  </div>
+
   {% endif %}
 {% endfor %}
 
