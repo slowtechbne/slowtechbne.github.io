@@ -1,7 +1,7 @@
 <div id="events">
   {% for event in site.data.events %}
   <div class="event">
-    <h3>{{ event.title }} <small>{{ event.subtitle }}</small></h3>
+    <strong>{{ event.title }}</strong> | {{ event.subtitle }}
     <div class="meta">
       <span class="time">{{ event.time }}, {{ event.date | date: "%d %B, %Y"}}</span>
     <span class="separator">|</span>
