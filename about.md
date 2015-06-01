@@ -4,8 +4,6 @@ title: "About"
 permalink: /about/
 ---
 
-
-
 We’re an eclectic group of people, of different nationalities and backgrounds, who meet occasionally over a meal to talk about how technology is shaping our society – and what we can do to protect ourselves and our communities from surveillance and commercial exploitation.
 
 We’re not against technology. We use it every day, and appreciate it. But we believe that privacy is essential to a healthy society. We want to live in a world where human values shape technology, not the other way round.
@@ -47,4 +45,5 @@ So please, pass this on.
 
 - [Berlin](https://slowtechberlin.de/)
 
-#### About this site
+#### About this site<a name="site"></a>
+This site is powered by [Jekyll](http://jekyllrb.com/), and hosted on [GitHub Pages](https://pages.github.com/).The site was built by a number of [contributors](https://github.com/slowtechbne/slowtechbne.github.io/graphs/contributors): feel free to open a pull request and add yourself to that list!
