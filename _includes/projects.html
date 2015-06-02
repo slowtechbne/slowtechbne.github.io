@@ -1,4 +1,7 @@
 {% for project in site.data.projects %}
+{% for category in project.category %}
+<h3>{{ project.category | capitalize }}</h3>
+  {% if project.category contains category %}
 <h4>{{ project.title }} <small>{{ project.subtitle }}</small></h4>
 {{ project.description | markdownify }}
   {% if project.url or project.github %}
@@ -19,4 +22,6 @@
     </div>{% endif %}
   </div>
   {% endif %}
+  {% endif %}
+  {% endfor %}
 {% endfor %}
