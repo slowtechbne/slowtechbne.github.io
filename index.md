@@ -8,13 +8,12 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
 
 #### Recent news
 
-{% for item in site.news limit:5 %}
-  {{ item.date | date: '%D' }} --- <strong>{{ item.title }}</strong>
+{% for item in site.news reversed limit:2 %}
+  {{ item.date }} --- <strong>{{ item.title }}</strong>
 
   <div class="index-news">
     {{ item.content }}
   </div>
-
 {% endfor %}
 
 {% if site.data.events %}
@@ -42,5 +41,5 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
 ##### [More events](/events/)
 
 {% else %}
-
+  There are no upcoming events! Please check back later.
 {% endif %}
