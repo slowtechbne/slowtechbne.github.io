@@ -17,7 +17,7 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
 
 {% endfor %}
 
-{% if site.data.events.size < 0 %}
+{% if site.data.events %}
 
 #### [Upcoming events](/events/)
 
@@ -27,11 +27,11 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
   {% capture eventunix %}{{ event.date | date: '%s' }}{% endcapture %}
   {% if eventunix > nowunix %}
   <div class="event">
-    <strong>{{ event.title }}</strong> | {{ event.subtitle }}
+    <strong>{{ event.title }}</strong>{% if event.subtitle %} | {{ event.subtitle }}{% endif %}
     <div class="meta">
       <span class="time">{{ event.time }}, {{ event.date | date: "%d %B, %Y"}}</span>
     <span class="separator">|</span>
-    {{ event.location }} <a href="https://www.openstreetmap.org/{{ event.osm }}"><span class="glyphicon glyphicon-map-marker"></span></a>
+    {{ event.location }} <a href="https://www.openstreetmap.org/{{ event.osm }}"><i class="fa fa-location-arrow"></i></a>
     </div>
     <div class="description">{{ event.description | markdownify }}</div>
   {% endif %}
@@ -39,7 +39,7 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
 </div>
 </div>
 
-##### [Past events](events#past)
+##### [More events](/events/)
 
 {% else %}
 
