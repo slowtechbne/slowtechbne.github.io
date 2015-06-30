@@ -33,9 +33,9 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
     {{ event.location }} <a href="https://www.openstreetmap.org/{{ event.osm }}"><i class="fa fa-location-arrow"></i></a>
     </div>
     <div class="description">{{ event.description | markdownify }}</div>
+  </div>
   {% endif %}
 {% endfor %}
-</div>
 </div>
 
 ##### [More events](/events/)
