@@ -25,7 +25,7 @@
     <strong>{{ event.title }}</strong> | {{ event.subtitle }}<br/>
     <span class="time">{{ event.time }}, {{ event.date | date: "%d %B, %Y"}}</span>
     <span class="separator">|</span>
-    {{ event.location }} <a href="https://www.openstreetmap.org/{{ event.osm }}"><i class="fa fa-location-arrow"></i></a>
+    {{ event.location }} {% if event.osm %}<a href="https://www.openstreetmap.org/{{ event.osm }}"><i class="fa fa-location-arrow"></i></a>{% endif %}
   </div>
   <div class="description">{{ event.description | markdownify }}</div>
   {% endif %}
