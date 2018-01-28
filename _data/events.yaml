@@ -1,14 +1,7 @@
-- title: "First general meeting"
-  time: 2.30pm
-  date: 2015-06-21
-  location: The Edge, South Bank
-  osm: way/34200092
-  description: >
-    This is the first general meeting of Slow Tech Brisbane. Come and catch up with others who are interested. We will be brainstorming ideas for the group, including projects, future events, and so on. All welcome! Contact `lm[at]loch[dot]land` for more info.
-- title: "Discussion group"
-  time: 7:00pm
-  date: 2015-11-19
-  location: bosc, corner of Princhester and Vulture streets, West End
-  osm: node/3332929186
-  description: >
-    Meet for a general discussion about recent events in security and privacy generally. All welcome; the discussion will not be overly technical.
+#- title: <Title as string>
+#  time: <Time as string, e.g. "2.30pm">
+#  date: <Date as yyyy-mm-dd>
+#  location: <Location as string>
+#  osm: <Part of OpenStreetMap URL after '.org/', e.g. way/34200092>
+#  description: <Description to appear; place after '>' so that it will be markdownified.>
+#    This is the first general meeting of Slow Tech Brisbane. Come and catch up with others who are interested. We will be brainstorming ideas for the group, including projects, future events, and so on. All welcome! Contact `lm[at]loch[dot]land` for more info.

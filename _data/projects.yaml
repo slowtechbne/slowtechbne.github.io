@@ -1,9 +1,6 @@
-- title: metametadata.org
-  subtitle: a website against the Australian metadata regime
-  category: activism
-  url: "https://metametadata.org"
-  github: "slowtechbne/metametadata.org"
-  description: >
-    A website that gives Australians access to information about
-    i. the metadata law passed in March; ii. why they should care; iii. how to protect themselves; and iv. their digital rights.
-
+#- title: <Title as string>
+#  subtitle: <String>
+#  category: <Categories: section headings are built from this>
+#  url: <URL, must be string enclosed in "", e.g. "https://metametadata.org">
+#  github: <Link to github> "slowtechbne/metametadata.org"
+#  description: <Description, place after ">" using Markdown syntax.
