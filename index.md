@@ -6,6 +6,11 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
 
 [Learn more...](/about/)
 
+Most of the conversation occurs in a Matrix room
+[here](https://matrix.to/#/#slowtechbne:matrix.org). Feel free to join on a
+client that supports encryption (like [Riot](https://riot.im)). We plan to set
+up a mailing list soon, too.
+
 <!---
 #### Recent news
 
