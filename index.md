@@ -6,6 +6,7 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
 
 [Learn more...](/about/)
 
+<!---
 #### Recent news
 
 {% for item in site.news reversed limit:2 %}
@@ -15,6 +16,7 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
     {{ item.content }}
   </div>
 {% endfor %}
+--->
 
 {% if site.data.events %}
 
@@ -41,5 +43,4 @@ __Welcome to Slow Tech Brisbane!__ We are an eclectic group of people based in B
 ##### [More events](/events/)
 
 {% else %}
-  There are no upcoming events! Please check back later.
 {% endif %}
